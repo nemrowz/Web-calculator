@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>lab7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <header class="header"><span class="title">Calculator</span></header>
+    <main class="main">
+        <div name="calc" class="calculator">
+            <div class="screen">
+                <textarea type="text" name="show" id="show" readonly></textarea>
+                <textarea type="text" name="input_call" id="input_call">0</textarea>
+            </div>
+            <div class="buttons">
+                <div class="row row-0">
+                    <button class="button" id="button-percentage" name="button-percentage"><b><i class="fas fa-percentage"></i></i></b></button>
+                    <button class="button" id="button-root" name="button-root"><b><i class="fas fa-square-root-alt"></i></b></button>
+                    <button class="button" id="button-super" name="button-super"><i class="fas fa-superscript"></i></button>
+                    <button class="button" id="button-oneDx" name="button-oneDx"><span id="oneDx">1/x</span></button>
+                </div>
+                <div class="row row-1">
+                    <button class="button" id="button-CE" name="button-CE"><b>CE</b></button>
+                    <button class="button" id="button-C" name="button-C"><b>C</b></button>
+                    <button class="button" id="button-back" name="button-back"><i class="fas fa-backspace"></i></button>
+                    <button class="button" id="button-divide" name="button-divide"><i class="fas fa-divide"></i></button>
+                </div>
+                <div class="row row-2">
+                    <button class="button" name="button-7" id="button-7" onclick="press('7')">7</button>
+                    <button class="button" id="button-8" name="button-8" onclick="press('8')">8</button>
+                    <button class="button" id="button-9" name="button-9" onclick="press('9')">9</button>
+                    <button class="button" id="button-times" name="button-times"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="row row-3">
+                    <button class="button" id="button-4" name="button-4" onclick="press('4')">4</button>
+                    <button class="button" id="button-5" name="button-5" onclick="press('5')">5</button>
+                    <button class="button" id="button-6" name="button-6" onclick="press('6')">6</button>
+                    <button class="button" id="button-minus" name="button-minus"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="row row-4">
+                    <button class="button" id="button-1" name="button-1" onclick="press('1')">1</button>
+                    <button class="button" id="button-2" name="button-2" onclick="press('2')">2</button>
+                    <button class="button" id="button-3" name="button-3" onclick="press('3')">3</button>
+                    <button class="button" id="button-plus" name="button-plus"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="row row-5">
+                    <button class="button" id="button-plus-minus" name="button-plus-minus" value="+-"><img src="images/mathematical-basic-signs-of-plus-and-minus-with-a-slash-w.png" width="25px"></button>
+                    <button class="button button-0" id="button-0" name="button-0" onclick="press('0')">0</button>
+                    <button class="button" id="button-dot" name="button-dot" value="."><b>.</b></button>
+                    <button class="button" id="button-calc" name="button-calc" value="=" onclick="calc()"><i class="fas fa-equals"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
